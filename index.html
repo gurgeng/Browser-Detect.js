@@ -9,10 +9,14 @@
         window.location="https://www.apple.com";
       } else if (isMobile.iOS && BrowserDetect.browser === 'Chrome') {
         window.location="https://www.google.com";
+      } else if (isMobile.Android) {
+        window.location="https://www.google.com";
       } else if (BrowserDetect.browser === 'Safari' && BrowserDetect.version > 6) {
         window.location="https://www.apple.com";
       } else if (BrowserDetect.browser === 'Chrome') {
         window.location="https://www.google.com";
+      } else if (BrowserDetect.browser === 'Explorer') {
+        window.location="https://www.microsoft.com";
       } else {
         window.location="https://www.mozilla.org";
       }
