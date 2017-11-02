@@ -5,7 +5,7 @@
     <title>Save The Date</title>
     <script type="text/javascript" src="browser_detect.js"></script>
     <script type="text/javascript">
-      if (isMobile.iOS == true) {
+      if (BrowserDetect.isMobile === 'iOS') {
         window.location="https://www.facebook.com";
       } else if (BrowserDetect.browser === 'Safari' && BrowserDetect.version > 6) {
         window.location="https://www.apple.com";
