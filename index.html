@@ -5,9 +5,16 @@
     <title>Save The Date</title>
     <script type="text/javascript" src="browser_detect.js"></script>
     <script type="text/javascript">
-      if (isMobile.iOS == true) {
-        window.location="https://www.facebook.com";
-        console.log(isMobile());
+      if (isMobile.iOS && BrowserDetect.browser === 'Safari') {
+        window.location="https://www.apple.com";
+      } else if (isMobile.iOS && BrowserDetect.browser === 'Chrome') {
+        window.location="https://www.google.com";
+      } else if (BrowserDetect.browser === 'Safari' && BrowserDetect.version > 6) {
+        window.location="https://www.apple.com";
+      } else if (BrowserDetect.browser === 'Chrome') {
+        window.location="https://www.google.com";
+      } else {
+        window.location="https://www.mozilla.org";
       }
     </script>
   </head>
