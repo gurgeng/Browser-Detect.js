@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Save The Date</title>
+    <script type="text/javascript" src="browser_detect.js"></script>
+    <script type="text/javascript">
+      if (isMobile.iOS == true) {
+        window.location="https://www.facebook.com";
+      } else if (BrowserDetect.browser === 'Safari' && BrowserDetect.version > 6) {
+        window.location="https://www.apple.com";
+      } else if (BrowserDetect.browser === 'Chrome') {
+        window.location="https://www.google.com";
+      } else {
+        window.location="https://www.mozilla.org";
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
